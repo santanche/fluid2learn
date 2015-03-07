@@ -20,7 +20,7 @@ public class Statistics implements IStatistics {
 		Iterator<Pergunta>it = perguntas.iterator();
 		while(it.hasNext()) {
 			p = it.next();
-            if (p.getPergunta() == pergunta) {
+            if (p.getPergunta().equalsIgnoreCase(pergunta)) {
             	naoExiste = false;
             	p.incQuantidadeVezes();
             	break;
