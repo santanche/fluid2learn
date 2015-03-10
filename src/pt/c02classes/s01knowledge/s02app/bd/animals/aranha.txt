@@ -1,0 +1,7 @@
+"tem apendices articulados", "sim"
+"tem exoesqueleto de quitina", "sim"
+"tem 4 pares de patas", "sim"
+"tem queliceras", "sim"
+"tem pedipalpos", "sim"
+"tem antenas", "nao"
+"ele voa", "nao"
