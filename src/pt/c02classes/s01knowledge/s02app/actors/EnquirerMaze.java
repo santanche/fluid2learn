@@ -33,6 +33,11 @@ public class EnquirerMaze implements IEnquirer {
 			tipo = scanner.nextLine();
 		}
 		
+		if (responder.finalAnswer("cheguei"))
+			System.out.println("Você encontrou a saida!");
+		else
+			System.out.println("Fuém fuém fuém!");
+		
 		scanner.close();
 		
 		return true;

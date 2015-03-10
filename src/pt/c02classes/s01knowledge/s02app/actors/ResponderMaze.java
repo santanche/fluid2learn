@@ -8,9 +8,7 @@ import pt.c02classes.s01knowledge.s01base.inter.IResponder;
 import pt.c02classes.s01knowledge.s01base.inter.IStatistics;
 
 public class ResponderMaze implements IResponder {
-	private String maze;
 	private IObjetoConhecimento obj;
-	private IStatistics estatisticas;
 	
     private char mazeMatrix[];
 	private int nLinhas = 0, nColunas = 0;
@@ -20,9 +18,7 @@ public class ResponderMaze implements IResponder {
 		IBaseConhecimento bc = new BaseConhecimento();
         bc.setScenario("maze");
 		
-		this.maze = maze;
 		this.obj = bc.recuperaObjeto(maze);
-		this.estatisticas = estatisticas;
 
 		IDeclaracao decl = obj.primeira();
 		if (decl != null) {
@@ -102,8 +98,7 @@ public class ResponderMaze implements IResponder {
 	}
 
 	public boolean finalAnswer(String answer) {
-		// TODO Auto-generated method stub
-		return false;
+		return (mazeMatrix[linhaAtual*nColunas+colunaAtual] == 'S');
 	}
 
 }
