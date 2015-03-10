@@ -15,7 +15,7 @@ public class EnquirerAnimals implements IEnquirer {
 		this.responder = responder;
 	}
 	
-	public boolean run() {
+	public boolean discover() {
         IBaseConhecimento bc = new BaseConhecimento();
         IObjetoConhecimento obj;
 		

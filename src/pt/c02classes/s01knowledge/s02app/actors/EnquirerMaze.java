@@ -13,7 +13,7 @@ public class EnquirerMaze implements IEnquirer {
 		this.responder = responder;
 	}
 	
-	public boolean run() {
+	public boolean discover() {
 		Scanner scanner = new Scanner(System.in);
 		
 		System.out.print("(P)ergunta, (M)ovimento ou (F)im? ");
